@@ -22,8 +22,8 @@ int main()
 
 
 
-    int* inputA = (int *)malloc(sizeA * sizeof(int));
-    int* inputB = (int *)malloc(sizeB * sizeof(int));
+    int* arrayA = (int *)malloc(sizeA * sizeof(int));
+    int* arrayB = (int *)malloc(sizeB * sizeof(int));
 
 
 
@@ -31,25 +31,25 @@ int main()
     for(int i = 0; i < sizeA; i++)
     {
         printf("\t%i:   ", i);
-        scanf("%i", &inputA[i]);
+        scanf("%i", &arrayA[i]);
     }
 
     printf("Enter the elements for array B:\n\n");
     for(int i = 0; i < sizeB; i++)
     {
         printf("\t%i:   ", i);
-        scanf("%i", &inputB[i]);
+        scanf("%i", &arrayB[i]);
     }
 
 
 
-    is_sorted(inputA, sizeA);
-    is_sorted(inputB, sizeB);
+    is_sorted(arrayA, sizeA);
+    is_sorted(arrayB, sizeB);
 
 
 
-    free(inputA);
-    free(inputB);
+    free(arrayA);
+    free(arrayB);
 
 
 
